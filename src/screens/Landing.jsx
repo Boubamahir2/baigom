@@ -12,7 +12,7 @@ export default function Landing() {
       <TopNavbar />
       <Header />
       <Services />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </>
   );

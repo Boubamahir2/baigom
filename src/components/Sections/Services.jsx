@@ -6,8 +6,15 @@ import FullButton from "../Buttons/FullButton";
 // Assets
 import AddImage1 from "../../assets/img/add/1.png";
 import AddImage2 from "../../assets/img/add/2.png";
-import AddImage3 from "../../assets/img/add/3.png";
+// import AddImage3 from "../../assets/img/add/3.png";
 import AddImage4 from "../../assets/img/add/4.png";
+import AddImage3 from "../../assets/real3.jpg";
+import AddImage6 from "../../assets/real6.jpg";
+import AddImage7 from "../../assets/real7.jpg";
+import AddImage8 from "../../assets/real8.jpg";
+import AddImage9 from "../../assets/real9.jpg";
+import LocationImg from "../../assets/location.jpg";
+import LocationImg2 from "../../assets/location2.jpg";
 
 export default function Services() {
   return (
@@ -26,28 +33,28 @@ export default function Services() {
           <ServiceBoxRow className='flex '>
             <ServiceBoxWrapper>
               <ServiceBox
-                icon='roller'
+                icon='livraison'
                 title='Livraison express'
                 subtitle='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
-                icon='monitor'
-                title='Lcation vehicule'
+                icon='location'
+                title='Location vehicule'
                 subtitle='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.'
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
-                icon='browser'
-                title='Demenagementt'
+                icon='demenagement'
+                title='Demenagement'
                 subtitle='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.'
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
-                icon='printer'
+                icon='import'
                 title='Import-Export'
                 subtitle='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.'
               />
@@ -82,18 +89,33 @@ export default function Services() {
                 <AddRightInner>
                   <div className='flexNullCenter'>
                     <AddImgWrapp1 className='flexCenter'>
-                      <img src={AddImage1} alt='office' />
+                      <img
+                      
+                        src={AddImage6}
+                        alt='office'
+                      />
                     </AddImgWrapp1>
                     <AddImgWrapp2>
-                      <img src={AddImage2} alt='office' />
+                      <img
+                        src={AddImage3}
+                  
+                        alt='office'
+                      />
                     </AddImgWrapp2>
                   </div>
                   <div className='flexNullCenter'>
                     <AddImgWrapp3>
-                      <img src={AddImage3} alt='office' />
+                      <img
+             
+                        src={LocationImg2}
+                        alt='office'
+                      />
                     </AddImgWrapp3>
                     <AddImgWrapp4>
-                      <img src={AddImage4} alt='office' />
+                      <img
+                        src={LocationImg}
+                        alt='office'
+                      />
                     </AddImgWrapp4>
                   </div>
                 </AddRightInner>
@@ -142,11 +164,7 @@ const Advertising = styled.div`
     margin: 80px 0 0px 0;
   }
 `;
-const ButtonsRow = styled.div`
-  @media (max-width: 860px) {
-    justify-content: space-between;
-  }
-`;
+
 const AddLeft = styled.div`
   width: 50%;
   p {
@@ -191,6 +209,14 @@ const AddImgWrapp1 = styled.div`
     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   }
+  @media (max-width: 550px) {
+    width: 100%;
+    margin: 10px;
+    img {
+      width: 100%;
+      height: 300px;
+    }
+  }
 `;
 const AddImgWrapp2 = styled.div`
   width: 30%;
@@ -202,6 +228,14 @@ const AddImgWrapp2 = styled.div`
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  }
+  @media (max-width: 550px) {
+    width: 100%;
+    margin: 10px;
+    img {
+      width: 100%;
+      height: 300px;
+    }
   }
 `;
 const AddImgWrapp3 = styled.div`
@@ -215,6 +249,15 @@ const AddImgWrapp3 = styled.div`
     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   }
+
+  @media (max-width: 550px) {
+    width: 100%;
+    margin: 10px;
+    img {
+      width: 100%;
+      height: 300px;
+    }
+  }
 `;
 const AddImgWrapp4 = styled.div`
   width: 30%;
@@ -226,5 +269,13 @@ const AddImgWrapp4 = styled.div`
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  }
+  @media (max-width: 550px) {
+    width: 100%;
+    margin: 10px;
+    img {
+      width: 100%;
+      height: 300px;
+    }
   }
 `;

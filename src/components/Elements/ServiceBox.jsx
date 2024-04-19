@@ -1,29 +1,29 @@
 import React from "react";
 import styled from "styled-components";
 // Assets
-import RollerIcon from "../../assets/svg/Services/RollerIcon";
-import MonitorIcon from "../../assets/svg/Services/MonitorIcon";
-import BrowserIcon from "../../assets/svg/Services/BrowserIcon";
-import PrinterIcon from "../../assets/svg/Services/PrinterIcon";
+import LivraisonIcon from "../../assets/svg/Services/livraison-expres.png";
+import DemenagementIcon from "../../assets/svg/Services/camion-de-demenagemen.png";
+import LocationIcon from "../../assets/svg/Services/location-de-voiture.png";
+import ImportIcon from "../../assets/svg/Services/exportation.png";
 
 export default function ServiceBox({icon, title, subtitle}) {
   let getIcon;
 
   switch (icon) {
-    case "roller":
-      getIcon = <RollerIcon />;
+    case 'livraison':
+      getIcon = <img src={LivraisonIcon} alt='livraison Service' />;;
       break;
-    case "monitor":
-      getIcon = <MonitorIcon />;
+    case 'location':
+      getIcon = <img src={LocationIcon} alt='location de vehicule Service' />;;
       break;
-    case "browser":
-      getIcon = <BrowserIcon />;
+    case 'demenagement':
+      getIcon = <img src={DemenagementIcon} alt='demanagement Service' />;;
       break;
-    case "printer":
-      getIcon = <PrinterIcon />;
+    case 'import':
+      getIcon = <img src={ImportIcon} alt='import-export Service' />;;
       break;
     default:
-      getIcon = <RollerIcon />;
+      getIcon = <img src={LivraisonIcon} alt='livraison Service' />;;
       break;
   }
 

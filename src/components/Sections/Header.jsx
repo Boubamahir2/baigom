@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 // Assets
-import HeaderImage from "../../assets/real.jpg";
+import HeaderImage from "../../assets/real12.jpg";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
 
@@ -10,7 +10,7 @@ export default function Header() {
     <Wrapper id='home' className='container flexSpaceCenter'>
       <LeftSide className='flexCenter'>
         <div>
-          <h1 className='extraBold font60'>Baigom Transport Express</h1>
+          <h1 className='extraBold font60'>Baïgom Transport Express</h1>
           <HeaderP className='font20 semiBold'>
             Votre partenaire polyvalent pour tous vos besoins en mobilité
             express et en services proffessionels!
@@ -23,17 +23,17 @@ export default function Header() {
             className='radius8'
             src={HeaderImage}
             alt='office'
-            style={{ zIndex: 9}}
+            style={{ zIndex: 9 }}
           />
           <QuoteWrapper
             className='flexCenter darkBg radius8'
-            style={{ marginLeft: '-60px' }}
+      
           >
             <QuotesWrapper>
               <QuotesIcon />
             </QuotesWrapper>
             <div>
-              <p className='font15 whiteColor'>
+              <p className='font18 whiteColor'>
                 <em>Votre satisfaction est notre priorité!</em>
               </p>
               <p

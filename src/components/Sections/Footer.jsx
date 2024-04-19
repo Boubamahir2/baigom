@@ -32,7 +32,12 @@ export default function Contact() {
             style={{ padding: '30px 0' }}
           >
             <div className='footer-row flexSpaceCenterr'>
-              <div className='flexCenterr whiteColor  font15'>
+              <div
+                className='flexCenterr whiteColor  font15'
+                style={{
+                  paddingTop: '10px ',
+                }}
+              >
                 {/* List of navigation links here */}
                 <h4>À propos de nous</h4>
 
@@ -60,10 +65,31 @@ export default function Contact() {
                   Politique de confidentialité
                 </Link>
               </div>
-              <div className='flexCenterr whiteColor  font15'>
+
+              <div
+                className='flexCenterr whiteColor  font15'
+                style={{
+                  paddingTop: '10px ',
+                }}
+              >
+                {/* Copyright information or other legal links here */}
+                <h4>Nos coordonnées</h4>
+                <p className='whiteColor font15'>
+                  25 Rue de Ponthieu 75018 Paris
+                </p>
+                <p className='whiteColor font15'>+33745943626</p>
+                <p className='whiteColor font15'>btesexpress@gmail.com</p>
+              </div>
+
+              <div
+                className='flexCenterr whiteColor  font15 '
+                style={{
+                  paddingTop: '10px ',
+                }}
+              >
                 {/* List of social media links here */}
                 <h4>Réseau Social</h4>
-                <div className='padintop'>
+                <div className='padintop  '>
                   <a className='whiteColor padingleft' href='#'>
                     <img
                       src={facebook}
@@ -92,150 +118,42 @@ export default function Contact() {
                       style={{ height: '30px', width: '30px' }}
                     />
                   </a>
-                </div>
-              </div>
-              <div className='flexCenterr whiteColor  font15'>
-                {/* Copyright information or other legal links here */}
-                <Link
-                  className='flexCenter animate pointer'
-                  to='home'
-                  smooth={true}
-                  offset={-80}
-                >
-                  <h3 className='font15 extraBold whiteColor'>
-                    BaÏgom Transport Express
-                  </h3>
-                </Link>
-                <StyleP className='whiteColor font15'>
-                  © {getCurrentYear()} -{' '}
-                  <span className='purpleColor font13'>B.T.E</span> All Right
-                  Reserved
-                </StyleP>
 
-                <div
-                  style={{
-                    paddingTop: '20px ',
-                    display: 'flex',
-                    justifyContent: 'center',
-                  }}
-                >
-                  <Link
-                    className='whiteColor animate pointer font15'
-                    to='home'
-                    smooth={true}
-                    offset={-80}
+                  <StyleP
+                    className='whiteColor font15'
+                    style={{
+                      paddingTop: '10px ',
+                    }}
                   >
-                    <img
-                      src={uparrow}
-                      alt='office'
-                      style={{ height: '30px', width: '30px' }}
-                    />
-                  </Link>
+                    © {getCurrentYear()} -{' '}
+                    <span className='purpleColor font15'>
+                      BaÏgom Transport Express
+                    </span>{' '}
+                  </StyleP>
+                  <div
+                    style={{
+                      paddingTop: '20px ',
+                      display: 'flex',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <Link
+                      className='whiteColor animate pointer font15'
+                      to='home'
+                      smooth={true}
+                      offset={-80}
+                    >
+                      <img
+                        src={uparrow}
+                        alt='office'
+                        style={{ height: '30px', width: '30px' }}
+                      />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </InnerWrapper>
-          {/* <InnerWrapper
-            className='flexSpaceCenter whiteColor  font15'
-            style={{ padding: '30px 0' }}
-          >
-            <div style={{ marginLeft: '15px' }}>
-              <h4>Réseau Social</h4>
-
-              <a href=''>
-                <img
-                  src={facebook}
-                  alt='office'
-                  style={{ height: '25px', width: '25px' }}
-                />
-              </a>
-
-              <a href=''>
-                <img
-                  src={twitter}
-                  alt='office'
-                  style={{ height: '25px', width: '25px' }}
-                />
-              </a>
-
-              <a href=''>
-                <img
-                  src={instagram}
-                  alt='office'
-                  style={{ height: '25px', width: '25px' }}
-                />
-              </a>
-
-              <a href=''>
-                <img
-                  src={snapchat}
-                  alt='office'
-                  style={{ height: '25px', width: '25px' }}
-                />
-              </a>
-            </div>
-
-            <div>
-              <h4>À propos de nous</h4>
-
-              <Link
-                className='whiteColor animate pointer font15'
-                to='home'
-                smooth={true}
-              >
-                Conditions générales des ventes
-              </Link>
-
-              <Link
-                className='whiteColor animate pointer font15'
-                to='home'
-                smooth={true}
-              >
-                Mentions légales
-              </Link>
-
-              <Link
-                className='whiteColor animate pointer font15'
-                to='home'
-                smooth={true}
-              >
-                Politique de confidentialité
-              </Link>
-
-              <StyleP className='whiteColor font15'>
-                © {getCurrentYear()} -{' '}
-                <span className='purpleColor font13'>B.T.E</span> All Right
-                Reserved
-              </StyleP>
-              <Link
-                className='flexCenter animate pointer'
-                to='home'
-                smooth={true}
-                offset={-80}
-              >
-                <h2 className='font15 extraBold whiteColor'>
-                  BaÏgom Transport Express
-                </h2>
-              </Link>
-            </div>
-
-            <div>
-              <h4>Nos coordonnées</h4>
-
-              <p>somothing</p>
-              <p>somothing</p>
-              <p>somothing</p>
-
-              <Link
-                className='whiteColor animate pointer font15'
-                to='home'
-                smooth={true}
-                offset={-80}
-              >
-                Back to top
-              </Link>
-            </div>
-          </InnerWrapper> */}
         </div>
       </div>
     </Wrapper>
@@ -247,7 +165,9 @@ const Wrapper = styled.div`
 `;
 const InnerWrapper = styled.div`
   @media (max-width: 550px) {
-    flex-direction: column;
+    .footer-row {
+      flex-direction: column;
+    }
   }
 `;
 const StyleP = styled.p`

@@ -30,11 +30,11 @@ export default function TopNavbar() {
       {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
       <Wrapper
         className='flexCenter animate whiteBg '
-        style={y > 100 ? { height: '100px' } : { height: '140px' }}
+        style={y > 90 ? { height: '90px' } : { height: '110px' }}
       >
         <NavInner className='container flexSpaceCenter'>
           <Link className='pointer flexNullCenter' to='home' smooth={true}>
-            <LogoIcon />
+            {/* <LogoIcon /> */}
             <h1 style={{ marginLeft: '15px' }} className='font20 extraBold'>
               Baigom Transport Express
             </h1>
@@ -70,7 +70,7 @@ export default function TopNavbar() {
                 Services
               </Link>
             </li>
-            <li className='semiBold font20 pointer'>
+            {/* <li className='semiBold font20 pointer'>
               <Link
                 activeClass='active'
                 style={{ padding: '10px 15px' }}
@@ -81,7 +81,7 @@ export default function TopNavbar() {
               >
                 Contact
               </Link>
-            </li>
+            </li> */}
           </UlWrapper>
         </NavInner>
       </Wrapper>

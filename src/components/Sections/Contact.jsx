@@ -4,6 +4,10 @@ import styled from "styled-components";
 import ContactImg1 from "../../assets/img/contact-1.png";
 import ContactImg2 from "../../assets/img/contact-2.png";
 import ContactImg3 from "../../assets/img/contact-3.png";
+import ContactImg7 from '../../assets/real7.jpg';
+import ContactImg8 from '../../assets/real8.jpg';
+import ContactImg9 from '../../assets/real9.jpg';
+import ContactImg15 from '../../assets/real15.jpg';
 
 export default function Contact() {
   return (
@@ -63,21 +67,33 @@ export default function Contact() {
                 />
               </SumbitWrapper>
             </div>
-            <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 flex'>
+            <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 flex flex-media'>
               <div
                 style={{ width: '50%' }}
                 className='flexNullCenter flexColumn'
               >
                 <ContactImgBox>
-                  <img src={ContactImg1} alt='office' className='radius6' />
+                  <img
+                    src={ContactImg8}
+                    alt='office'
+                    className='radius6 image-style-1'
+                  />
                 </ContactImgBox>
                 <ContactImgBox>
-                  <img src={ContactImg2} alt='office' className='radius6' />
+                  <img
+                    src={ContactImg9}
+                    alt='office'
+                    className='radius6 image-style-2'
+                  />
                 </ContactImgBox>
               </div>
               <div style={{ width: '50%' }}>
                 <div style={{ marginTop: '100px' }}>
-                  <img src={ContactImg3} alt='office' className='radius6' />
+                  <img
+                    src={ContactImg15}
+                    alt='office'
+                    className='radius6 image-style-3'
+                  />
                 </div>
               </div>
             </div>
