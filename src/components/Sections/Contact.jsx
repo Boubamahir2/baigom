@@ -68,10 +68,7 @@ export default function Contact() {
               </SumbitWrapper>
             </div>
             <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 flex flex-media'>
-              <div
-                style={{ width: '50%' }}
-                className='flexNullCenter flexColumn'
-              >
+              <div className='flexNullCenter flexColumn image-column'>
                 <ContactImgBox>
                   <img
                     src={ContactImg8}
@@ -87,7 +84,7 @@ export default function Contact() {
                   />
                 </ContactImgBox>
               </div>
-              <div style={{ width: '50%' }}>
+              <div className='image-column'>
                 <div style={{ marginTop: '100px' }}>
                   <img
                     src={ContactImg15}
@@ -150,9 +147,12 @@ const ButtonInput = styled.input`
   }
 `;
 const ContactImgBox = styled.div`
-  max-width: 180px; 
   align-self: flex-end; 
   margin: 10px 30px 10px 0;
+   @media (max-width: 550px) {
+    width:100%;
+    margin: 0 ;
+   }
 `;
 const SumbitWrapper = styled.div`
   @media (max-width: 991px) {
